@@ -35,5 +35,5 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           
-      - name: Run a one-line script
+      - name: Run another one-line script
         run: cat README.md
