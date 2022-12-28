@@ -34,6 +34,9 @@ jobs:
         run: |
           echo $GIT_COMMIT ,
           echo test, and deploy your project.
+          echo "APP Name : $({ env.APP_NAME })"
+          echo " $({ env.PACK_NAME })"
+          echo "GoodBuy FROM FIRST_JOB_NAME"
           
       - name: Run another one-line script
         run: cat README.md
