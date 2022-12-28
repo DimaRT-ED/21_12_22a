@@ -34,7 +34,7 @@ jobs:
         run: |
           echo $GIT_COMMIT ,
           echo test, and deploy your project.
-          echo " $({ github.sha })"
+          echo " ${ github.sha }"
           echo "GoodBuy FROM FIRST_JOB_NAME"
           
       - name: Run another one-line script
