@@ -2,6 +2,10 @@
 
 name: CI
 
+env:
+  APP_NAME: "MyApp"
+  PACK_NAME: "App_version-$({ github.sha })"
+
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the "master" branch
@@ -34,7 +38,7 @@ jobs:
         run: |
           echo " $GIT_COMMIT " 
           echo " test, and deploy your project. "
-          echo " $({ github.sha })"
+           echo " $({ env.PACK_NAME })"
           echo "GoodBuy FROM FIRST_JOB_NAME"
           
       - name: Run another one-line script
