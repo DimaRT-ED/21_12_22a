@@ -32,8 +32,8 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          echo $GIT_COMMIT ,
-          echo test, and deploy your project.
+          echo " $GIT_COMMIT " 
+          echo " test, and deploy your project. "
           echo " ${ github.sha }"
           echo "GoodBuy FROM FIRST_JOB_NAME"
           
